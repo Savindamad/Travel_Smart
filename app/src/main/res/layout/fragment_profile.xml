@@ -1,0 +1,236 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.travelsmart.fourloop.travelsmart.Profile">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AllRl"
+        android:background="#f7f7f7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fdfdfd"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/PersonalInfoRl"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/ProfilePicImg"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Name"
+                android:id="@+id/NameTv"
+                android:layout_below="@+id/ProfilePicImg"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Mobile Num"
+                android:id="@+id/MobileNumTv"
+                android:layout_below="@+id/NameTv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Email"
+                android:id="@+id/EmailTv"
+                android:layout_below="@+id/MobileNumTv"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Edit"
+                android:id="@+id/EditeTv"
+                android:layout_below="@+id/MobileNumTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PersonalInfoRl"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/FavoriteRl"
+            android:layout_marginTop="5dp"
+            android:background="#fdfdfd">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Favorites"
+                android:id="@+id/FavoritesTv"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <ListView
+                android:layout_width="fill_parent"
+                android:layout_height="120dp"
+                android:layout_below="@+id/FavoritesTv"
+                android:id="@+id/FavoriteList"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FavoriteList">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Add route"
+                    android:id="@+id/AddRouteTv"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="5dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FavoriteRl"
+            android:layout_alignStart="@+id/FavoriteRl"
+            android:id="@+id/FriendsRl"
+            android:background="#fdfdfd"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Friends"
+                android:id="@+id/FriendsTv1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/FriendsTv1"
+                android:id="@+id/FriendImg1"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/FriendImg2"
+                android:layout_toEndOf="@+id/FriendImg1"
+                android:layout_below="@+id/FriendsTv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/FriendImg3"
+                android:layout_toEndOf="@+id/FriendImg2"
+                android:layout_below="@+id/FriendsTv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/FriendImg4"
+                android:layout_toEndOf="@+id/FriendImg3"
+                android:layout_below="@+id/FriendsTv1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:background="#ffffff"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="View all"
+                android:id="@+id/ViewAllTv"
+                android:layout_below="@+id/FriendsTv1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/FriendsRl"
+            android:id="@+id/OtherRl"
+            android:background="#fdfdfd"
+            android:layout_marginTop="5dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="     Customize profile     "
+                android:id="@+id/CustomizeProfileTv"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/my_button_bg1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="14dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="     Logout     "
+                android:background="#0e91c9"
+                android:textColor="#ffffff"
+                android:id="@+id/LogoutTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textSize="14dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

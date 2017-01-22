@@ -1,0 +1,86 @@
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+    <string-array name="vehicleType">
+        <item>Car</item>
+        <item>Van</item>
+        <item>SUV</item>
+        <item>Bus</item>
+        <item>Motorcycle</item>
+    </string-array>
+
+    <string-array name="Car">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="Van">
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+
+    <string-array name="SUV">
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="Bus">
+        <item>54</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+    </string-array>
+
+    <string-array name="Motorcycle">
+        <item>2</item>
+    </string-array>
+
+    <string-array name="Bank">
+        <item>Bank of Ceylon</item>
+        <item>Commercial Bank of Ceylon</item>
+        <item>DFCC Vardhana Bank</item>
+        <item>Hatton National Bank</item>
+        <item>HDFC Bank</item>
+    </string-array>
+
+    <string-array name="Bank1">
+        <item>Branch1</item>
+    </string-array>
+
+    <string-array name="Bank2">
+        <item>Branch1</item>
+    </string-array>
+
+    <string-array name="Bank3">
+        <item>Branch1</item>
+    </string-array>
+
+    <string-array name="Bank4">
+        <item>Branch1</item>
+    </string-array>
+
+    <string-array name="Bank5">
+        <item>Branch1</item>
+    </string-array>
+
+</resources>

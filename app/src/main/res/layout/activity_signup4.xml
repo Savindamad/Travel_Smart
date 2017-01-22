@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.travelsmart.fourloop.travelsmart.Signup4"
+    android:background="#f7f7f7">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpNPRl"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:layout_marginLeft="5dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup as service provider"
+            android:id="@+id/ServiceProviderBtn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/my_button_bg1"
+            android:onClick="ServiceProvider"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Signup as passenger"
+            android:id="@+id/PassengerBtn"
+            android:layout_below="@+id/ServiceProviderBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/my_button_bg1"
+            android:onClick="Passenger"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/DoneBtn2"
+        android:layout_below="@+id/SpNPRl"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#0e91c9"
+        android:textColor="#ffffff"
+        android:onClick="Done2"/>
+</RelativeLayout>

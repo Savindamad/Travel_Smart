@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.travelsmart.fourloop.travelsmart.AboutUs"
+    android:background="#f7f7f7">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/AllRl3">
+
+        <ImageView
+            android:layout_width="225dp"
+            android:layout_height="195dp"
+            android:id="@+id/fourLoopLogoIv"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fourloop"
+            android:layout_marginTop="5dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DiscriptionRl"
+            android:layout_below="@+id/fourLoopLogoIv"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="team forurloop is jjb bjbjc jbjbjx bjbjbc kknkn knkkn cknkc knkcnknc knknc knkcnknknkcncncknknknknc"
+                android:id="@+id/DescriptionTv"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/DiscriptionRl2"
+            android:layout_below="@+id/DiscriptionRl"
+            android:background="#ffffff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Hotline : 0712345678"
+                android:id="@+id/HotlineTv"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Follow us :"
+                android:id="@+id/textView4"
+                android:layout_below="@+id/HotlineTv"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/FaceBookBtn"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/TwitterBtn"
+                android:layout_alignBottom="@+id/FaceBookBtn"
+                android:layout_toEndOf="@+id/FaceBookBtn"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/icotwi" />
+
+            <Button
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/InstergramBtn"
+                android:layout_alignTop="@+id/TwitterBtn"
+                android:layout_toEndOf="@+id/TwitterBtn"
+                android:background="@drawable/google" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Website : www.teamfourLoop.com"
+                android:id="@+id/websiteTv"
+                android:layout_below="@+id/FaceBookBtn"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>
